@@ -1,0 +1,126 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 480px;
+}
+.header-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+.header-img img{
+   /* width: 100%; */
+}
+.header-img .img-text{
+    /* width: 100%; */
+    padding: 20px 0 0;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    right: 0;
+}
+
+.header-nav{
+    background:linear-gradient(0,#ccc,rgba(0,0,0,0.5));
+    height: 40px;
+}
+.header-nav .nav-ul{
+    list-style: none;
+}
+
+.header-nav li{
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 40px;
+}
+.header-nav li:hover{
+    color: #fff;
+    background-color: #757575;
+    cursor: pointer;
+}
+
+.main{
+    width: 100%;
+}
+.hotnews{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #757575;
+    padding: 0 8px;
+}
+.imgnews{
+    text-align: center;
+    width: 100%;
+}
+.imgnews img{
+    width: 100%;
+}
+.textnews{
+    width: 100%;
+    padding: 0 0 0 4px;
+    margin: auto;
+}
+
+.textnews .title{
+    background: linear-gradient(0,#fff,yellow);
+    height: 35px;
+    
+}
+.textnews .content{
+    background: linear-gradient(to bottom right,#fff,rgba(0,0,0,0.5));
+}
+
+.textnews .frmcomment{
+    padding: 10px 0 0;
+}
+
+.news{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #757575;
+}
+.item{
+    padding: 0 4px;
+    margin: auto;
+    width: 100%;
+}
+
+.item .title{
+    background: linear-gradient(0,#fff,yellow);
+}
+
+.item .content{
+    background: linear-gradient(to bottom right,#fff,rgba(0,0,0,0.5));
+}
+.item img{
+    width: 100%;
+}
+/* ipad */
+@media (max-width: 1024px) and (min-width:740px) {
+    .col-6{
+        width:50% ;
+     }
+    .col-3{
+        width: 25% ;
+    }
+   
+}
+
+/* PC */
+@media (min-width: 1024px) {
+    .col-s-6{
+        width:50% ;
+     }
+    .col-s-3{
+        width: 25%;
+    }
+
+}

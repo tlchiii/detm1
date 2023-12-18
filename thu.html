@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .d2,.d3,.d4,.d5{
+            margin: 4px;
+        }
+        .d2{
+            background-color: palevioletred;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+        .d3{
+            background-color: chocolate;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+        .d4{
+            background-color:darkgoldenrod;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+        .d5{
+            background-color:aquamarine;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+      @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .d1{
+             flex-wrap:wrap;
+        }
+      }
+
+      @media screen and (max-width: 767px){
+          .d1{
+            flex-direction: column;
+          }
+          .d2,.d3,.d4,.d5{
+            margin: 4px auto;
+          }
+      }
+    </style>
+</head>
+<body>
+    <div class="d1">
+        <div class="d2"></div>
+        <div class="d3"></div>
+        <div class="d4"></div>
+        <div class="d5"></div>
+    </div>
+</body>
+</html>
